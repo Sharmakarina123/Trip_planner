@@ -1,27 +1,3 @@
-// Preloader Control
-const preloader = document.querySelector('.preloader');
-
-// Hide preloader when page loads
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        preloader.classList.add('hidden');
-    }, 2000);
-});
-
-// Show preloader on form submission
-document.getElementById('tripForm').addEventListener('submit', () => {
-    preloader.classList.remove('hidden');
-});
-
-// Modify your existing form submission code:
-// Add this in your finally clause after API call
-function hidePreloader() {
-    preloader.classList.add('hidden');
-}
-
-
-
-
 const mockData = {
     // Indian Cities/States
     "new delhi": {
@@ -320,6 +296,27 @@ const mockData = {
             }
         }
     
+
+// Preloader Control
+const preloader = document.querySelector('.preloader');
+
+// Hide preloader when page loads
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+    }, 2000);
+});
+
+// Show preloader on form submission
+document.getElementById('tripForm').addEventListener('submit', () => {
+    preloader.classList.remove('hidden');
+});
+
+// Modify your existing form submission code:
+// Add this in your finally clause after API call
+function hidePreloader() {
+    preloader.classList.add('hidden');
+}
 
 
         // Update the updateBudget function
