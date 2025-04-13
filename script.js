@@ -304,7 +304,7 @@ const preloader = document.querySelector('.preloader');
 window.addEventListener('load', () => {
     setTimeout(() => {
         preloader.classList.add('hidden');
-    }, 3300);
+    }, 3100);
 });
 
 // Show preloader on form submission
