@@ -278,22 +278,106 @@ const mockData = {
             },
         
             "tokyo": {
-                places: {
-                    short: [
-                        { name: "Senso-ji Temple", map: "https://www.google.com/maps/search/?api=1&query=Sensoji+Temple", desc: "Tokyo's oldest Buddhist temple" },
-                        { name: "Shibuya Crossing", map: "https://www.google.com/maps/search/?api=1&query=Shibuya+Crossing", desc: "World's busiest pedestrian crossing" },
-                        { name: "Tokyo Skytree", map: "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree", desc: "634m broadcasting tower" },
-                        { name: "Meiji Shrine", map: "https://www.google.com/maps/search/?api=1&query=Meiji+Shrine+Tokyo", desc: "Shinto shrine in forested area" },
-                        { name: "Tsukiji Outer Market", map: "https://www.google.com/maps/search/?api=1&query=Tsukiji+Outer+Market", desc: "Fresh seafood & street food" }
-                    ],
-                    medium: [
-                        { name: "teamLab Borderless", map: "https://www.google.com/maps/search/?api=1&query=teamLab+Borderless+Tokyo", desc: "Digital art museum" },
-                        { name: "Imperial Palace", map: "https://www.google.com/maps/search/?api=1&query=Imperial+Palace+Tokyo", desc: "Emperor's residence & gardens" },
-                        { name: "Akihabara", map: "https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo", desc: "Electronics & anime district" },
-                        { name: "Odaiba", map: "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo", desc: "Futuristic entertainment island"}
-                    ]
+                    places: {
+                        short: [
+                            { name: "Senso-ji Temple", map: "https://www.google.com/maps/search/?api=1&query=Sensoji+Temple", desc: "Tokyo's oldest Buddhist temple (645 AD)" },
+                            { name: "Shibuya Crossing", map: "https://www.google.com/maps/search/?api=1&query=Shibuya+Scramble+Crossing", desc: "World's busiest pedestrian crossing" },
+                            { name: "Tokyo Skytree", map: "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree", desc: "634m tall broadcasting tower with observation decks" },
+                            { name: "Meiji Shrine", map: "https://www.google.com/maps/search/?api=1&query=Meiji+Jingu", desc: "Shinto shrine in 170-acre forest" },
+                            { name: "Tsukiji Outer Market", map: "https://www.google.com/maps/search/?api=1&query=Tsukiji+Outer+Market", desc: "Fresh seafood & Japanese street food" }
+                        ],
+                        medium: [
+                            { name: "teamLab Borderless", map: "https://www.google.com/maps/search/?api=1&query=teamLab+Borderless+Tokyo", desc: "Digital art museum in Odaiba" },
+                            { name: "Imperial Palace", map: "https://www.google.com/maps/search/?api=1&query=Tokyo+Imperial+Palace", desc: "Emperor's residence with East Gardens" },
+                            { name: "Akihabara", map: "https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo", desc: "Electronics & anime culture district" },
+                            { name: "Odaiba", map: "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo", desc: "Futuristic artificial island with Gundam statue" }
+                        ],
+                        long: [
+                            { name: "Ghibli Museum", map: "https://www.google.com/maps/search/?api=1&query=Ghibli+Museum", desc: "Studio Ghibli animation museum" },
+                            { name: "Nikko Day Trip", map: "https://www.google.com/maps/search/?api=1&query=Nikko+National+Park", desc: "UNESCO World Heritage shrines" },
+                            { name: "Hakone", map: "https://www.google.com/maps/search/?api=1&query=Hakone", desc: "Hot springs with Mt. Fuji views" },
+                            { name: "Kamakura", map: "https://www.google.com/maps/search/?api=1&query=Kamakura+Great+Buddha", desc: "Historic city with giant Buddha statue" }
+                        ]
+                    },
+                    hotels: {
+                        budget: [
+                            { name: "APA Hotel Asakusa", map: "https://www.google.com/maps/search/?api=1&query=APA+Hotel+Asakusa", price: "₹5,500/night", rating: "3.9" },
+                            { name: "Hostel Bedgasm", map: "https://www.google.com/maps/search/?api=1&query=Hostel+Bedgasm+Tokyo", price: "₹3,200/night", rating: "4.3" }
+                        ],
+                        luxury: [
+                            { name: "Park Hotel Tokyo", map: "https://www.google.com/maps/search/?api=1&query=Park+Hotel+Tokyo", price: "₹35,000/night", rating: "4.8" },
+                            { name: "The Ritz-Carlton Tokyo", map: "https://www.google.com/maps/search/?api=1&query=Ritz+Carlton+Tokyo", price: "₹75,000/night", rating: "4.9" }
+                        ]
+                    }
+                },
+            
+                "dubai": {
+                    places: {
+                        short: [
+                            { name: "Burj Khalifa", map: "https://www.google.com/maps/search/?api=1&query=Burj+Khalifa", desc: "World's tallest building (828m)" },
+                            { name: "Dubai Mall", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Mall", desc: "World's largest shopping mall" },
+                            { name: "Palm Jumeirah", map: "https://www.google.com/maps/search/?api=1&query=Palm+Jumeirah", desc: "Artificial archipelago" },
+                            { name: "Dubai Fountain", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Fountain", desc: "World's largest choreographed fountain" },
+                            { name: "Desert Safari", map: "https://www.google.com/maps/search/?api=1&query=Arabian+Adventures", desc: "Dune bashing & Bedouin camp" }
+                        ],
+                        medium: [
+                            { name: "Dubai Frame", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Frame", desc: "150m tall picture frame structure" },
+                            { name: "Gold Souk", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Gold+Souk", desc: "Traditional gold market" },
+                            { name: "Dubai Marina", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Marina", desc: "Modern waterfront district" },
+                            { name: "Miracle Garden", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Miracle+Garden", desc: "World's largest natural flower garden" }
+                        ],
+                        long: [
+                            { name: "Al Fahidi District", map: "https://www.google.com/maps/search/?api=1&query=Al+Fahidi+Historic+District", desc: "Traditional wind-tower houses" },
+                            { name: "Dubai Opera", map: "https://www.google.com/maps/search/?api=1&query=Dubai+Opera", desc: "Architectural marvel for performances" },
+                            { name: "Hatta Mountains", map: "https://www.google.com/maps/search/?api=1&query=Hatta+Dams", desc: "Mountainous enclave with dams" },
+                            { name: "Global Village", map: "https://www.google.com/maps/search/?api=1&query=Global+Village+Dubai", desc: "Multicultural festival park" }
+                        ]
+                    },
+                    hotels: {
+                        budget: [
+                            { name: "Rove Downtown Dubai", map: "https://www.google.com/maps/search/?api=1&query=Rove+Downtown+Dubai", price: "₹8,500/night", rating: "4.2" },
+                            { name: "Ibis Dubai Deira", map: "https://www.google.com/maps/search/?api=1&query=Ibis+Dubai+Deira", price: "₹6,200/night", rating: "4.0" }
+                        ],
+                        luxury: [
+                            { name: "Burj Al Arab", map: "https://www.google.com/maps/search/?api=1&query=Burj+Al+Arab", price: "₹2,50,000/night", rating: "5" },
+                            { name: "Atlantis The Palm", map: "https://www.google.com/maps/search/?api=1&query=Atlantis+The+Palm", price: "₹1,75,000/night", rating: "5" }
+                        ]
+                    }
+                },
+            
+                "usa": {
+                    places: {
+                        short: [
+                            { name: "Statue of Liberty", map: "https://www.google.com/maps/search/?api=1&query=Statue+of+Liberty", desc: "Iconic symbol of freedom in NYC" },
+                            { name: "Central Park", map: "https://www.google.com/maps/search/?api=1&query=Central+Park+NYC", desc: "843-acre urban park in Manhattan" },
+                            { name: "Times Square", map: "https://www.google.com/maps/search/?api=1&query=Times+Square+NYC", desc: "Busiest commercial intersection" },
+                            { name: "Grand Canyon", map: "https://www.google.com/maps/search/?api=1&query=Grand+Canyon", desc: "1-mile deep Colorado River gorge" },
+                            { name: "Golden Gate Bridge", map: "https://www.google.com/maps/search/?api=1&query=Golden+Gate+Bridge", desc: "Iconic 1.7mi long suspension bridge" }
+                        ],
+                        medium: [
+                            { name: "Yellowstone National Park", map: "https://www.google.com/maps/search/?api=1&query=Yellowstone+National+Park", desc: "First national park with geysers" },
+                            { name: "Las Vegas Strip", map: "https://www.google.com/maps/search/?api=1&query=Las+Vegas+Strip", desc: "4mi long entertainment corridor" },
+                            { name: "French Quarter", map: "https://www.google.com/maps/search/?api=1&query=French+Quarter+New+Orleans", desc: "Historic heart of New Orleans" },
+                            { name: "Hollywood Walk of Fame", map: "https://www.google.com/maps/search/?api=1&query=Hollywood+Walk+of+Fame", desc: "2,700+ celebrity stars" }
+                        ],
+                        long: [
+                            { name: "Yosemite National Park", map: "https://www.google.com/maps/search/?api=1&query=Yosemite+National+Park", desc: "Glacier-carved valley with cliffs" },
+                            { name: "Walt Disney World", map: "https://www.google.com/maps/search/?api=1&query=Walt+Disney+World", desc: "40sq mi entertainment complex" },
+                            { name: "Freedom Trail", map: "https://www.google.com/maps/search/?api=1&query=Freedom+Trail+Boston", desc: "2.5mi historical path" },
+                            { name: "Mount Rushmore", map: "https://www.google.com/maps/search/?api=1&query=Mount+Rushmore", desc: "60ft presidential sculptures" }
+                        ]
+                    },
+                    hotels: {
+                        budget: [
+                            { name: "Motel 6", map: "https://www.google.com/maps/search/?api=1&query=Motel+6", price: "₹5,000/night", rating: "3.5" },
+                            { name: "HI USA Hostels", map: "https://www.google.com/maps/search/?api=1&query=HI+USA+Hostels", price: "₹3,800/night", rating: "4.0" }
+                        ],
+                        luxury: [
+                            { name: "Four Seasons NYC", map: "https://www.google.com/maps/search/?api=1&query=Four+Seasons+Hotel+NYC", price: "₹1,00,000/night", rating: "5" },
+                            { name: "Waldorf Astoria", map: "https://www.google.com/maps/search/?api=1&query=Waldorf+Astoria+NYC", price: "₹1,25,000/night", rating: "5" }
+                        ]
+                    }
                 }
-            }
         }
     
 
